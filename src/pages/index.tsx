@@ -1,8 +1,14 @@
+import { Section, Template } from "@/components/layout";
+
 /**
  * Homepage
  */
 const Homepage = () => {
-    return <div>Hello worl!</div>;
+    return (
+        <Template>
+            <Section>Hello</Section>
+        </Template>
+    );
 };
 
 export default Homepage;
