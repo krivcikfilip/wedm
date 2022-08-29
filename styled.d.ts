@@ -5,12 +5,11 @@ declare module "styled-components" {
         color: {
             primary: string;
             secondary: string;
-            info: string;
-            success: string;
-            warning: string;
-            danger: string;
             dark: string;
             light: string;
+        };
+        fontFamily: {
+            manrope: string;
         };
     }
 }

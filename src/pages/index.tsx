@@ -1,8 +1,7 @@
-/**
- * Homepage
- */
-const Homepage = () => {
-    return <div>Hello worl!</div>;
+import { HomeView } from "@/views";
+
+const Domu = () => {
+    return <HomeView />;
 };
 
-export default Homepage;
+export default Domu;
