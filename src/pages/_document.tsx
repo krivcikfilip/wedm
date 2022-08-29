@@ -8,9 +8,6 @@ import Document, {
 } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
-/**
- * Custom document
- */
 class MyDocument extends Document {
     static async getInitialProps(
         ctx: DocumentContext
@@ -45,7 +42,7 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     <link
-                        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+                        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;900&display=swap"
                         rel="stylesheet"
                     />
                 </Head>

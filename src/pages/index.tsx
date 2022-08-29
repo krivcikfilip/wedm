@@ -1,14 +1,7 @@
-import { Section, Template } from "@/components/layout";
+import { HomeView } from "@/views";
 
-/**
- * Homepage
- */
-const Homepage = () => {
-    return (
-        <Template>
-            <Section>Hello</Section>
-        </Template>
-    );
+const Domu = () => {
+    return <HomeView />;
 };
 
-export default Homepage;
+export default Domu;

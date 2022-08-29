@@ -4,7 +4,6 @@ import { TextProps } from "@/components/core";
 
 export const Wrapper = styled.span<StyledTextProps>`
     font-weight: ${({ weight }) => weight};
-    display: inline-block;
 
     ${(props) => parseSizeVariant(props)}
 `;
@@ -15,12 +14,22 @@ const parseSizeVariant = (props: StyledTextProps) => {
             return css`
                 font-size: 80px;
                 line-height: 96px;
+
+                @media (max-width: 700px) {
+                    font-size: 55px;
+                    line-height: 76px;
+                }
             `;
         }
         case "bigger-title": {
             return css`
                 font-size: 48px;
                 line-height: 58px;
+
+                @media (max-width: 700px) {
+                    font-size: 40px;
+                    line-height: 58px;
+                }
             `;
         }
         case "title": {
@@ -44,7 +53,7 @@ const parseSizeVariant = (props: StyledTextProps) => {
         case "body": {
             return css`
                 font-size: 16px;
-                line-height: 22px;
+                line-height: 30px;
             `;
         }
         case "caption": {
